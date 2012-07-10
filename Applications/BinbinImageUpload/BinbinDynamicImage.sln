@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinImageUpload", "BinbinImageUpload\BinbinImageUpload.csproj", "{EE833101-BDFD-4098-ACAB-E6D91B99720C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinImageUpload.Sample", "BinbinImageUpload.Sample\BinbinImageUpload.Sample.csproj", "{E4D981F3-9D20-4AC2-9D24-E283AFE80C9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binbin.ImageUpload.sdk", "Binbin.ImageUpload.sdk\Binbin.ImageUpload.sdk.csproj", "{B99C8C7B-0367-4F89-895D-80B655998FF9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = BinbinImageUpload
+		SccLocalPath2 = BinbinImageUpload.Sample
+		SccLocalPath3 = Binbin.ImageUpload.sdk
+		SccNumberOfProjects = 4
+		SccProjectName1 = BinbinImageUpload
+		SccProjectName2 = BinbinImageUpload.Sample
+		SccProjectName3 = Binbin.ImageUpload.sdk
+		SccProjectUniqueName1 = BinbinImageUpload\\BinbinImageUpload.csproj
+		SccProjectUniqueName2 = BinbinImageUpload.Sample\\BinbinImageUpload.Sample.csproj
+		SccProjectUniqueName3 = Binbin.ImageUpload.sdk\\Binbin.ImageUpload.sdk.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B99C8C7B-0367-4F89-895D-80B655998FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99C8C7B-0367-4F89-895D-80B655998FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99C8C7B-0367-4F89-895D-80B655998FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99C8C7B-0367-4F89-895D-80B655998FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4D981F3-9D20-4AC2-9D24-E283AFE80C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4D981F3-9D20-4AC2-9D24-E283AFE80C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4D981F3-9D20-4AC2-9D24-E283AFE80C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4D981F3-9D20-4AC2-9D24-E283AFE80C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE833101-BDFD-4098-ACAB-E6D91B99720C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE833101-BDFD-4098-ACAB-E6D91B99720C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE833101-BDFD-4098-ACAB-E6D91B99720C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE833101-BDFD-4098-ACAB-E6D91B99720C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

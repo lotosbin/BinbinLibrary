@@ -1,0 +1,8 @@
+﻿<Window x:Class="GalaxyAutoEntity.WpfApplication.WindowAutoEntity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowAutoEntity" Height="300" Width="300" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox Margin="12,149,12,12" Name="listBox1" />
+    </Grid>
+</Window>

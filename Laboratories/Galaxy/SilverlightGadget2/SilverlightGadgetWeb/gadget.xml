@@ -1,0 +1,34 @@
+﻿<!--
+// Silverlight Vista Sidebar Gadget Template created by Ioan Lazarciuc
+// http://www.lazarciuc.ro/ioan
+// Contact form present on website
+// Based on the Vista Sidebar Gadget Template created by Tim Heuer
+// http://timheuer.com/blog/
+-->
+
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <!-- The name will appear on the Gadget Tile and settings window -->
+  <name>[Gadget Name Here]</name>
+  <namespace>[Your Namespace Here]</namespace>
+  <version>1.0.0.0</version>
+  <author name="[Your Name Here]">
+    <info url="[Your URL Here]" />
+    <!-- The logo file will display on the more details window of the Gadget Tile window -->
+    <logo src="icon.png" />
+  </author>
+  <copyright>&#169; [Year]</copyright>
+  <!-- The description displays in the Gadget Tile window when the Gadget is selected -->
+  <description>[Your Description Here]</description>
+  <icons>
+    <icon height="48" width="48" src="icon.png" />
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="gadget.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+      <defaultImage src="drag.png" />
+    </host>
+  </hosts>
+</gadget>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{00000000-0000-0000-0000-000000000000}") = "Binbin.Profile.MvcApplicationMain", "Binbin.Profile.MvcApplicationMain\Binbin.Profile.MvcApplicationMain.csproj", "{D35E5DA0-E8C7-4236-9EA5-1F0B81D53B9C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = Binbin.Profile.MvcApplicationMain
+		SccNumberOfProjects = 2
+		SccProjectName1 = Binbin.Profile.MvcApplicationMain
+		SccProjectUniqueName1 = Binbin.Profile.MvcApplicationMain\\Binbin.Profile.MvcApplicationMain.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D35E5DA0-E8C7-4236-9EA5-1F0B81D53B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35E5DA0-E8C7-4236-9EA5-1F0B81D53B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35E5DA0-E8C7-4236-9EA5-1F0B81D53B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35E5DA0-E8C7-4236-9EA5-1F0B81D53B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

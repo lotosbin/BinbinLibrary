@@ -1,0 +1,46 @@
+﻿@model IEnumerable<BinbinJobSearch.Entities.Merchant>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            OwnerUserName
+        </th>
+        <th>
+            CreatedTime
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OwnerUserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MerchantID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MerchantID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MerchantID })
+        </td>
+    </tr>
+}
+
+</table>

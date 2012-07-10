@@ -1,0 +1,16 @@
+﻿@model object
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    title</h2>
+<a href="@((string)this.ViewBag.TopAuthUrl)">top auth</a>
+<form action="https://oauth.tbsandbox.com/token" method="post">
+<input type="hidden" name="grant_type" value="authorization_code" /> 
+<input type="hidden" name="code" value="authorization_code" /> 
+<input type="hidden" name="redirect_uri" value="authorization_code" /> 
+<input type="hidden" name="client_id" value="authorization_code" /> 
+<input type="hidden" name="client_secret" value="@(Settings.Default.Secret)" /> 
+<input type="submit" name="name" value="确认" />
+</form>

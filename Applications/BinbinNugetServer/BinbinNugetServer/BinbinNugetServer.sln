@@ -1,0 +1,128 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7E20196D-EF19-4B9A-9EA7-2B5F6F69D73C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		packages\repositories.config = packages\repositories.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetPackageUploader", "NuGetPackageUploader\NuGetPackageUploader.csproj", "{6CE4025E-660A-445C-AF22-DF809CE66D7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetPackageUploadService", "NugetPackageUploadService\NugetPackageUploadService.csproj", "{3D7E033B-30AC-409C-84B1-D7A6985172D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetSample", "NugetSample\NugetSample.csproj", "{55135A6D-C0AA-4670-A015-2EA59E356DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetWebApplication", "NugetWebApplication\NugetWebApplication.csproj", "{BF9131C1-E622-4672-B451-4A4EA08FF41B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{EBB9497F-34AD-4E93-BFD1-05E400AC3929}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{C96F41B2-636D-4321-AD4F-8DA0F5586B48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{001A1595-3748-42A7-914E-C57D04D7FF89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{93E139FC-2C9D-4050-A053-6F4E78138D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetServerSample", "NugetServerSample\NugetServerSample.csproj", "{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = NuGetPackageUploader
+		SccLocalPath2 = NugetPackageUploadService
+		SccLocalPath3 = NugetSample
+		SccLocalPath4 = NugetWebApplication
+		SccLocalPath5 = NugetServerSample
+		SccNumberOfProjects = 6
+		SccProjectName1 = NuGetPackageUploader
+		SccProjectName2 = NugetPackageUploadService
+		SccProjectName3 = NugetSample
+		SccProjectName4 = NugetWebApplication
+		SccProjectName5 = NugetServerSample
+		SccProjectTopLevelParentUniqueName1 = BinbinNugetServer.sln
+		SccProjectTopLevelParentUniqueName2 = BinbinNugetServer.sln
+		SccProjectTopLevelParentUniqueName3 = BinbinNugetServer.sln
+		SccProjectTopLevelParentUniqueName4 = BinbinNugetServer.sln
+		SccProjectTopLevelParentUniqueName5 = BinbinNugetServer.sln
+		SccProjectUniqueName1 = NuGetPackageUploader\\NuGetPackageUploader.csproj
+		SccProjectUniqueName2 = NugetPackageUploadService\\NugetPackageUploadService.csproj
+		SccProjectUniqueName3 = NugetSample\\NugetSample.csproj
+		SccProjectUniqueName4 = NugetWebApplication\\NugetWebApplication.csproj
+		SccProjectUniqueName5 = NugetServerSample\\NugetServerSample.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0}.Release|x86.ActiveCfg = Release|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Debug|x86.ActiveCfg = Debug|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Debug|x86.Build.0 = Debug|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Release|Any CPU.ActiveCfg = Release|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Release|x86.ActiveCfg = Release|x86
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D}.Release|x86.Build.0 = Release|x86
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B}.Release|x86.ActiveCfg = Release|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{001A1595-3748-42A7-914E-C57D04D7FF89} = {EBB9497F-34AD-4E93-BFD1-05E400AC3929}
+		{3D7E033B-30AC-409C-84B1-D7A6985172D0} = {001A1595-3748-42A7-914E-C57D04D7FF89}
+		{55135A6D-C0AA-4670-A015-2EA59E356DE4} = {C96F41B2-636D-4321-AD4F-8DA0F5586B48}
+		{6CE4025E-660A-445C-AF22-DF809CE66D7D} = {93E139FC-2C9D-4050-A053-6F4E78138D6C}
+		{93E139FC-2C9D-4050-A053-6F4E78138D6C} = {EBB9497F-34AD-4E93-BFD1-05E400AC3929}
+		{BF9131C1-E622-4672-B451-4A4EA08FF41B} = {001A1595-3748-42A7-914E-C57D04D7FF89}
+		{C0DA8C63-2BE4-4DE2-A57D-E7B0C7963A66} = {C96F41B2-636D-4321-AD4F-8DA0F5586B48}
+	EndGlobalSection
+EndGlobal

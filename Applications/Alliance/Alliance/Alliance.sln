@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0", "0", "{20AA7D8D-2A0A-4697-B224-63D0961499F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1", "1", "{A36D06EF-9CC2-4A2B-BCF9-FC4685D12BD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2", "2", "{FCED86A5-EB0C-4628-8D3A-1A88F57EE6CC}"
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "LinkTechAdapter", "LinkTechAdapter\LinkTechAdapter.csproj", "{377A37E3-72E4-4E15-8190-D627419D0A05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{966E6A01-5095-4A5C-9A46-E33D1446E809}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = LinkTechAdapter
+		SccNumberOfProjects = 2
+		SccProjectName1 = LinkTechAdapter
+		SccProjectTopLevelParentUniqueName1 = Alliance.sln
+		SccProjectUniqueName1 = LinkTechAdapter\\LinkTechAdapter.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{377A37E3-72E4-4E15-8190-D627419D0A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377A37E3-72E4-4E15-8190-D627419D0A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377A37E3-72E4-4E15-8190-D627419D0A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377A37E3-72E4-4E15-8190-D627419D0A05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{377A37E3-72E4-4E15-8190-D627419D0A05} = {966E6A01-5095-4A5C-9A46-E33D1446E809}
+		{966E6A01-5095-4A5C-9A46-E33D1446E809} = {FCED86A5-EB0C-4628-8D3A-1A88F57EE6CC}
+	EndGlobalSection
+EndGlobal

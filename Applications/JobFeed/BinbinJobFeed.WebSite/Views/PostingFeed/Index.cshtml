@@ -1,0 +1,18 @@
+﻿@using System.Net.Mime
+@model System.Collections.Generic.List<BinbinJobFeed.Entities.Posting>
+@{
+    Response.ContentType = "text/xml";
+     
+}
+<postingfeed>
+<UpdateTime>@DateTime.Now.ToString()</UpdateTime>
+<Items>
+@foreach (var p in this.Model)
+{
+    <PostingFeedItem>
+    <name>@p.Name</name>
+    
+    </PostingFeedItem>
+}
+</Items>
+</postingfeed>

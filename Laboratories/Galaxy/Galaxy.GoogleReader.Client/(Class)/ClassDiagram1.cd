@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Galaxy.GoogleReader.WpfApplication.Origin">
+    <Position X="3.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAABAAAAAgAAAAAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Galaxy.GoogleReader.WpfApplication.Summary">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Galaxy.GoogleReader.WpfApplication.Alternate">
+    <Position X="6.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAAAAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Galaxy.GoogleReader.WpfApplication.LinkingUser">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Galaxy.GoogleReader.WpfApplication.Comment">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Galaxy.GoogleReader.WpfApplication.Annotation">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Galaxy.GoogleReader.WpfApplication.ListAllJsonItem">
+    <Position X="3.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAEAAAAAGAACAAAAAAAQAAAEAAAQAAAAAgAIAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Origin" />
+      <Property Name="Summary" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Alternate" />
+      <Property Name="LinkingUsers" />
+      <Property Name="Comments" />
+      <Property Name="Annotations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Galaxy.GoogleReader.WpfApplication.Self">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Galaxy.GoogleReader.WpfApplication.ListAllJson">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACEAAgCABAAAAAAAAAAAAQIAAAAAAAAA=</HashCode>
+      <FileName>ListAllJson.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+      <Property Name="Self" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

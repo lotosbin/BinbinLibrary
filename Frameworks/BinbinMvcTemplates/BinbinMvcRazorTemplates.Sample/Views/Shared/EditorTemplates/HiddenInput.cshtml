@@ -1,0 +1,9 @@
+﻿@model object
+@{
+    var ModelValue = this.Model.GetModelValueForHiddenInput();
+}
+@if (!ViewData.ModelMetadata.HideSurroundingHtml)
+{  
+    @Html.Encode(ViewData.TemplateInfo.FormattedModelValue)  
+}
+@Html.Hidden("", ModelValue)

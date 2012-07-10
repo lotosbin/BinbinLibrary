@@ -1,0 +1,29 @@
+﻿<sap:ActivityDesigner x:Class="VisitWebSiteActivityLibrary.ClickDesigner"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation" 
+                      mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="68" d:DesignWidth="336">
+    <sap:ActivityDesigner.Resources>
+        <ResourceDictionary x:Uid="ResourceDictionary_1">
+            <sapc:ArgumentToExpressionConverter x:Uid="sadv:ArgumentToExpressionConverter_1" x:Key="ArgumentToExpressionConverter" />
+        </ResourceDictionary>
+    </sap:ActivityDesigner.Resources>
+    <Grid Height="32" Width="328">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".4*"></ColumnDefinition>
+            <ColumnDefinition Width=".6*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="页面按钮的名称："  HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Name="label1" VerticalAlignment="Top" />
+        <sapv:ExpressionTextBox  Grid.Row="0" Grid.Column="1"
+                                 OwnerActivity="{Binding Path=ModelItem}" 
+                                 Expression="{Binding Path=ModelItem.ClickName, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }"
+                                 UseLocationExpression="False"   />
+
+       
+    </Grid>
+</sap:ActivityDesigner>

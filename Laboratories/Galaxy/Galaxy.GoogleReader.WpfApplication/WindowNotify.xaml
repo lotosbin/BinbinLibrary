@@ -1,0 +1,8 @@
+﻿<Window x:Class="Galaxy.GoogleReader.WpfApplication.WindowNotify"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowNotify" Height="300" Width="300" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox Name="listBox1" />
+    </Grid>
+</Window>

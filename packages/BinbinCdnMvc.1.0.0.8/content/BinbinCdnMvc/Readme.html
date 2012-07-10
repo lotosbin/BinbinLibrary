@@ -1,0 +1,89 @@
+﻿1.feature
+
+replace ~/content to static.sample.com/content
+replace ~/scripts to static.sample.com/scripts
+
+replace *.css to *.min.cs
+repalce *.js to *.min.js
+
+
+2.sample app.config/web.config
+<p>
+    捐赠</p>
+<pre style="font-family: NSimSun; font-size: 13; color: black; background: white;"><span 
+    style="color:blue;">&lt;?</span><span style="color:maroon;">xml</span>&nbsp;<span 
+    style="color:red;">version</span><span style="color:blue;">=&quot;1.0&quot;</span>&nbsp;<span 
+    style="color:red;">encoding</span><span style="color:blue;">=&quot;utf-8&quot;</span>&nbsp;<span 
+    style="color:blue;">?&gt;</span>
+<span style="color:blue;">&lt;</span><span style="color:maroon;">configuration</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">configSections</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">sectionGroup</span>&nbsp;<span 
+    style="color:red;">name</span><span style="color:blue;">=&quot;applicationSettings&quot;</span>&nbsp;<span 
+    style="color:red;">type</span><span style="color:blue;">=&quot;System.Configuration.ApplicationSettingsGroup,&nbsp;System,&nbsp;Version=4.0.0.0,&nbsp;Culture=neutral,&nbsp;PublicKeyToken=b77a5c561934e089&quot;</span>&nbsp;<span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">section</span>&nbsp;<span 
+    style="color:red;">name</span><span style="color:blue;">=&quot;BinbinCdnMvc.Settings&quot;</span>&nbsp;<span 
+    style="color:red;">type</span><span style="color:blue;">=&quot;System.Configuration.ClientSettingsSection,&nbsp;System,&nbsp;Version=4.0.0.0,&nbsp;Culture=neutral,&nbsp;PublicKeyToken=b77a5c561934e089&quot;</span>&nbsp;<span 
+    style="color:red;">requirePermission</span><span style="color:blue;">=&quot;false&quot;</span>&nbsp;<span 
+    style="color:blue;">/&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">sectionGroup</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">configSections</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">applicationSettings</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">BinbinCdnMvc.Settings</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">setting</span>&nbsp;<span 
+    style="color:red;">name</span><span style="color:blue;">=&quot;UseMinCss&quot;</span>&nbsp;<span 
+    style="color:red;">serializeAs</span><span style="color:blue;">=&quot;String&quot;&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">value</span><span 
+    style="color:blue;">&gt;</span>True<span style="color:blue;">&lt;/</span><span 
+    style="color:maroon;">value</span><span style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">setting</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">setting</span>&nbsp;<span 
+    style="color:red;">name</span><span style="color:blue;">=&quot;UseMinScript&quot;</span>&nbsp;<span 
+    style="color:red;">serializeAs</span><span style="color:blue;">=&quot;String&quot;&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">value</span><span 
+    style="color:blue;">&gt;</span>True<span style="color:blue;">&lt;/</span><span 
+    style="color:maroon;">value</span><span style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">setting</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">setting</span>&nbsp;<span 
+    style="color:red;">name</span><span style="color:blue;">=&quot;ContentMinVersion&quot;</span>&nbsp;<span 
+    style="color:red;">serializeAs</span><span style="color:blue;">=&quot;String&quot;&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">value</span><span 
+    style="color:blue;">&gt;</span>2011082401<span style="color:blue;">&lt;/</span><span 
+    style="color:maroon;">value</span><span style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">setting</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">setting</span>&nbsp;<span 
+    style="color:red;">name</span><span style="color:blue;">=&quot;ContentServerUrl&quot;</span>&nbsp;<span 
+    style="color:red;">serializeAs</span><span style="color:blue;">=&quot;String&quot;&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">value</span><span 
+    style="color:blue;">&gt;</span>http://static.binbinsoft.com/<span 
+    style="color:blue;">&lt;/</span><span style="color:maroon;">value</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">setting</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">BinbinCdnMvc.Settings</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;</span><span style="color:maroon;">Ymatou.Mvc.Cdn.Properties.Settings</span>&nbsp;&nbsp;<span 
+    style="color:blue;">&gt;</span>
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">Ymatou.Mvc.Cdn.Properties.Settings</span><span 
+    style="color:blue;">&gt;</span>
+&nbsp;&nbsp;<span style="color:blue;">&lt;/</span><span style="color:maroon;">applicationSettings</span><span 
+    style="color:blue;">&gt;</span>
+<span style="color:blue;">&lt;/</span><span style="color:maroon;">configuration</span><span 
+    style="color:blue;">&gt;</span></pre>
+<pre style="font-family: NSimSun; font-size: 13; color: black; background: white url('')">change history</pre>
+<pre style="font-family: NSimSun; font-size: 13; color: black; background: white url('')">2011-08-24</pre>
+<pre style="font-family: NSimSun; font-size: 13; color: black; background: white url('')">fix bug</pre>
+
+<![CDATA[ 
+
+]]>

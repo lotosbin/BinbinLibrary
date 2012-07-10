@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>BinbinCdnMvc</id>
+    <version>1.0.0.8</version>
+    <authors>liubinbin</authors>
+    <owners>liubinbin</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      2011-08-24
+      add sample configuration file.
+      update readme.txt
+      add BinbinCdnMvc.config file
+      fix bug
+    </description>
+    <tags>Mvc Cdn</tags>
+  </metadata>
+  <files>
+    <file src="bin\Debug\BinbinCdnMvc.dll" target="lib" />
+    <file src="App.config" target="content\BinbinCdnMvc\SampleApp.config"/>
+    <file src="Readme.Html" target="content\BinbinCdnMvc\"/>
+    <file src="BinbinCdnMvc.config" target="content\BinbinCdnMvc\"/>
+  </files>
+</package>

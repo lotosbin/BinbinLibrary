@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinDynamicImage", "BinbinDynamicImage\BinbinDynamicImage.csproj", "{B11F6F5D-725F-427A-B2AF-D1E2E55B5A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binbin.DynamicImage", "Binbin.DynamicImage\Binbin.DynamicImage.csproj", "{0B631164-517A-4ABD-AB42-51079EF89045}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = BinbinDynamicImage
+		SccLocalPath2 = Binbin.DynamicImage
+		SccNumberOfProjects = 3
+		SccProjectName1 = BinbinDynamicImage
+		SccProjectName2 = Binbin.DynamicImage
+		SccProjectUniqueName1 = BinbinDynamicImage\\BinbinDynamicImage.csproj
+		SccProjectUniqueName2 = Binbin.DynamicImage\\Binbin.DynamicImage.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B631164-517A-4ABD-AB42-51079EF89045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B631164-517A-4ABD-AB42-51079EF89045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B631164-517A-4ABD-AB42-51079EF89045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B631164-517A-4ABD-AB42-51079EF89045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11F6F5D-725F-427A-B2AF-D1E2E55B5A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11F6F5D-725F-427A-B2AF-D1E2E55B5A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11F6F5D-725F-427A-B2AF-D1E2E55B5A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11F6F5D-725F-427A-B2AF-D1E2E55B5A81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

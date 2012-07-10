@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFramework", "EntityFramework", "{177D3577-FFD5-402F-96C1-C4F51E55453E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample1", "Sample1", "{855990E7-E1CC-4A8C-A63C-0680CDAE43C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkSample1", "EntityFrameworkSample1\EntityFrameworkSample1.csproj", "{74483330-9BAF-4982-A40B-7353F20E1655}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{D33C0DE7-18AE-4439-B2E7-F6C7138AADCD}"
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "EntityFrameworkSample1.MvcApplication1", "EntityFrameworkSample1.MvcApplication1\EntityFrameworkSample1.MvcApplication1.csproj", "{FB790F22-E59B-423B-A27C-67F47B223476}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = EntityFrameworkSample1
+		SccLocalPath2 = EntityFrameworkSample1.MvcApplication1
+		SccNumberOfProjects = 3
+		SccProjectName1 = EntityFrameworkSample1
+		SccProjectName2 = EntityFrameworkSample1.MvcApplication1
+		SccProjectTopLevelParentUniqueName1 = Samples.sln
+		SccProjectTopLevelParentUniqueName2 = Samples.sln
+		SccProjectUniqueName1 = EntityFrameworkSample1\\EntityFrameworkSample1.csproj
+		SccProjectUniqueName2 = EntityFrameworkSample1.MvcApplication1\\EntityFrameworkSample1.MvcApplication1.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74483330-9BAF-4982-A40B-7353F20E1655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74483330-9BAF-4982-A40B-7353F20E1655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74483330-9BAF-4982-A40B-7353F20E1655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74483330-9BAF-4982-A40B-7353F20E1655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB790F22-E59B-423B-A27C-67F47B223476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB790F22-E59B-423B-A27C-67F47B223476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB790F22-E59B-423B-A27C-67F47B223476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB790F22-E59B-423B-A27C-67F47B223476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74483330-9BAF-4982-A40B-7353F20E1655} = {855990E7-E1CC-4A8C-A63C-0680CDAE43C3}
+		{855990E7-E1CC-4A8C-A63C-0680CDAE43C3} = {177D3577-FFD5-402F-96C1-C4F51E55453E}
+		{D33C0DE7-18AE-4439-B2E7-F6C7138AADCD} = {855990E7-E1CC-4A8C-A63C-0680CDAE43C3}
+		{FB790F22-E59B-423B-A27C-67F47B223476} = {855990E7-E1CC-4A8C-A63C-0680CDAE43C3}
+	EndGlobalSection
+EndGlobal

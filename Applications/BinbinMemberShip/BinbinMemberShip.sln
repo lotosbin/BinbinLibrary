@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMemberShip", "BinbinMemberShip\BinbinMemberShip.csproj", "{46322394-7B16-4452-B628-A21628FCE9AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMemberShipEntityFrameworkCodeFirst", "BinbinMemberShipEntityFrameworkCodeFirst\BinbinMemberShipEntityFrameworkCodeFirst.csproj", "{20E11E45-87A3-4EF7-8263-D5CE8E325092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMemberShipEntityFrameworkCodeFirst.Sample", "BinbinMemberShipEntityFrameworkCodeFirst.Sample\BinbinMemberShipEntityFrameworkCodeFirst.Sample.csproj", "{A0B1CE3F-A22E-4975-91AD-A57077076AAC}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BinbinMemberShip\\BinbinMemberShip.csproj
+		SccProjectName1 = BinbinMemberShip
+		SccLocalPath1 = BinbinMemberShip
+		SccProjectUniqueName2 = BinbinMemberShipEntityFrameworkCodeFirst\\BinbinMemberShipEntityFrameworkCodeFirst.csproj
+		SccProjectName2 = BinbinMemberShipEntityFrameworkCodeFirst
+		SccLocalPath2 = BinbinMemberShipEntityFrameworkCodeFirst
+		SccProjectUniqueName3 = BinbinMemberShipEntityFrameworkCodeFirst.Sample\\BinbinMemberShipEntityFrameworkCodeFirst.Sample.csproj
+		SccProjectName3 = BinbinMemberShipEntityFrameworkCodeFirst.Sample
+		SccLocalPath3 = BinbinMemberShipEntityFrameworkCodeFirst.Sample
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46322394-7B16-4452-B628-A21628FCE9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46322394-7B16-4452-B628-A21628FCE9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46322394-7B16-4452-B628-A21628FCE9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46322394-7B16-4452-B628-A21628FCE9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E11E45-87A3-4EF7-8263-D5CE8E325092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E11E45-87A3-4EF7-8263-D5CE8E325092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E11E45-87A3-4EF7-8263-D5CE8E325092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E11E45-87A3-4EF7-8263-D5CE8E325092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B1CE3F-A22E-4975-91AD-A57077076AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B1CE3F-A22E-4975-91AD-A57077076AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B1CE3F-A22E-4975-91AD-A57077076AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B1CE3F-A22E-4975-91AD-A57077076AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

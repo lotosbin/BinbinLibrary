@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMvcTemplates", "BinbinMvcTemplates\BinbinMvcTemplates.csproj", "{3C24D4DC-F4C3-4EB8-8123-C8149A0D1E66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMvcRazorTemplates", "BinbinMvcRazorTemplates\BinbinMvcRazorTemplates.csproj", "{1BA2B6C9-1730-472B-962C-C6E6186ECEBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMvcAspxTemplates", "BinbinMvcAspxTemplates\BinbinMvcAspxTemplates.csproj", "{7B3E748F-F7DA-480F-A0E7-E16873AF6828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMvcRazorTemplates.Sample", "BinbinMvcRazorTemplates.Sample\BinbinMvcRazorTemplates.Sample.csproj", "{F1DB8D38-FD56-4968-89DC-F2BC6526CC32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMvcRazorHtml5Templates", "BinbinMvcRazorHtml5Templates\BinbinMvcRazorHtml5Templates.csproj", "{CD212C9B-F0A8-415E-99A6-366EBD17D491}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BinbinMvcTemplates\\BinbinMvcTemplates.csproj
+		SccProjectName1 = BinbinMvcTemplates
+		SccLocalPath1 = BinbinMvcTemplates
+		SccProjectUniqueName2 = BinbinMvcRazorTemplates\\BinbinMvcRazorTemplates.csproj
+		SccProjectName2 = BinbinMvcRazorTemplates
+		SccLocalPath2 = BinbinMvcRazorTemplates
+		SccProjectUniqueName3 = BinbinMvcAspxTemplates\\BinbinMvcAspxTemplates.csproj
+		SccProjectName3 = BinbinMvcAspxTemplates
+		SccLocalPath3 = BinbinMvcAspxTemplates
+		SccProjectUniqueName4 = BinbinMvcRazorTemplates.Sample\\BinbinMvcRazorTemplates.Sample.csproj
+		SccProjectName4 = BinbinMvcRazorTemplates.Sample
+		SccLocalPath4 = BinbinMvcRazorTemplates.Sample
+		SccProjectUniqueName5 = BinbinMvcRazorHtml5Templates\\BinbinMvcRazorHtml5Templates.csproj
+		SccProjectName5 = BinbinMvcRazorHtml5Templates
+		SccLocalPath5 = BinbinMvcRazorHtml5Templates
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C24D4DC-F4C3-4EB8-8123-C8149A0D1E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C24D4DC-F4C3-4EB8-8123-C8149A0D1E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C24D4DC-F4C3-4EB8-8123-C8149A0D1E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C24D4DC-F4C3-4EB8-8123-C8149A0D1E66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA2B6C9-1730-472B-962C-C6E6186ECEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA2B6C9-1730-472B-962C-C6E6186ECEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA2B6C9-1730-472B-962C-C6E6186ECEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA2B6C9-1730-472B-962C-C6E6186ECEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3E748F-F7DA-480F-A0E7-E16873AF6828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3E748F-F7DA-480F-A0E7-E16873AF6828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3E748F-F7DA-480F-A0E7-E16873AF6828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3E748F-F7DA-480F-A0E7-E16873AF6828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DB8D38-FD56-4968-89DC-F2BC6526CC32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DB8D38-FD56-4968-89DC-F2BC6526CC32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DB8D38-FD56-4968-89DC-F2BC6526CC32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DB8D38-FD56-4968-89DC-F2BC6526CC32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD212C9B-F0A8-415E-99A6-366EBD17D491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD212C9B-F0A8-415E-99A6-366EBD17D491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD212C9B-F0A8-415E-99A6-366EBD17D491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD212C9B-F0A8-415E-99A6-366EBD17D491}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

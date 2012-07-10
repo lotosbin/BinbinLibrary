@@ -1,0 +1,179 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Browser.cs" caret="141" fromTop="4" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:VisitPageDesigner.xaml.cs" caret="591" fromTop="20" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:VisitPageDesigner.xaml" caret="1875" fromTop="2" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ClickExtension.cs" caret="1160" fromTop="15" />
+      <File id="73A2487E-2AD8-433E-8FCF-84222A99F5FF/f:Workflow1.xaml" caret="0" fromTop="0" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputDataExtensionDesigner.xaml.cs" caret="517" fromTop="16" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueDesigner.xaml.cs" caret="508" fromTop="16" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueDesigner.xaml" caret="80" fromTop="0" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputDataDesigner.xaml.cs" caret="0" fromTop="0" />
+      <File id="73A2487E-2AD8-433E-8FCF-84222A99F5FF/f:Program.cs" caret="216" fromTop="11" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ClickSpanByStyle.cs" caret="1293" fromTop="6" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ClickFirstChildDivByParentClass.cs" caret="1735" fromTop="7" />
+      <File id="E6FFACD1-3CEB-43B9-997F-7F0C0C3BA476/f:Program.cs" caret="213" fromTop="11" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ClickDivByClass.cs" caret="640" fromTop="13" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputData.cs" caret="3613" fromTop="0" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputDataExtension.cs" caret="0" fromTop="0" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputDataDesigner.xaml" caret="2800" fromTop="11" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="57" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:VisitPage.cs" caret="822" fromTop="19" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ExecuteJavascript.cs" caret="686" fromTop="16" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="3260" fromTop="11" />
+      <File id="9A524B87-C231-4678-99A6-D08C8987908C/f:Program.cs" caret="216" fromTop="11" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputDataExtension.cs" caret="0" fromTop="0" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputDataDesigner.xaml" caret="2284" fromTop="7" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputDataDesigner.xaml" caret="2800" fromTop="11" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:InputDataDesigner.xaml" caret="7808" fromTop="11" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="10" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="10" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="8" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="14" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="69" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="22" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="15" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="4600" fromTop="66" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="2452" fromTop="6" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="2951" fromTop="17" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="3825" fromTop="22" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="3825" fromTop="12" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="3825" fromTop="11" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3029" fromTop="16" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:SetInputValueWitchInDivByDivId.cs" caret="3030" fromTop="57" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:VisitPage.cs" caret="1113" fromTop="19" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="3811" fromTop="21" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="3769" fromTop="23" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="3450" fromTop="16" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:Click.cs" caret="3361" fromTop="11" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ExecuteJavascript.cs" caret="1074" fromTop="22" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ExecuteJavascript.cs" caret="1054" fromTop="24" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ExecuteJavascript.cs" caret="2600" fromTop="20" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ExecuteJavascript.cs" caret="664" fromTop="15" />
+      <File id="A4D9E628-04DF-4285-8AD9-E3294FBD4A9E/f:ExecuteJavascript.cs" caret="686" fromTop="16" />
+      <File id="9A524B87-C231-4678-99A6-D08C8987908C/f:Program.cs" caret="216" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="0" />
+      <Item value="InArgument`0" priority="0" />
+      <Item value="context" priority="1" />
+      <Item value="inputElement" priority="5" />
+      <Item value="null" priority="6" />
+      <Item value="return" priority="3" />
+      <Item value="false" priority="2" />
+      <Item value="if" priority="11" />
+      <Item value="buttonElement" priority="1" />
+      <Item value="child" priority="23" />
+      <Item value="clickElementName" priority="4" />
+      <Item value="clickName" priority="1" />
+      <Item value="IHTMLDivElement`0" priority="1" />
+      <Item value="divElement" priority="5" />
+      <Item value="IHtmlDlgSafeHelper`0" priority="0" />
+      <Item value="from" priority="0" />
+      <Item value="c" priority="0" />
+      <Item value="collection" priority="0" />
+      <Item value="body" priority="3" />
+      <Item value="Browser`0" priority="0" />
+      <Item value="doc" priority="6" />
+      <Item value="IHTMLInputElement`0" priority="0" />
+      <Item value="string" priority="1" />
+      <Item value="InputId" priority="0" />
+      <Item value="OrderedParallelQuery" priority="0" />
+      <Item value="inputId" priority="1" />
+      <Item value="true" priority="0" />
+      <Item value="children" priority="1" />
+      <Item value="divId" priority="0" />
+      <Item value="continue" priority="0" />
+      <Item value="IHTMLEventObj`0" priority="1" />
+      <Item value="CharEnumerator`0" priority="0" />
+      <Item value="IHTMLAnchorElement`0" priority="0" />
+      <Item value="anchorElement" priority="0" />
+      <Item value="DBNull`0" priority="0" />
+      <Item value="onclicktext" priority="1" />
+      <Item value="cw" priority="1" />
+      <Item value="ex" priority="0" />
+      <Item value="IHTMLDocument`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Activities.InArgument`1">
+      <Item value="Get`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mshtml.IHTMLInputElement">
+      <Item value="name" priority="1" />
+      <Item value="dynsrc" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mshtml.IHTMLButtonElement">
+      <Item value="name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mshtml.IHTMLElement">
+      <Item value="id" priority="2" />
+      <Item value="click`0" priority="6" />
+      <Item value="style" priority="0" />
+      <Item value="className" priority="1" />
+      <Item value="children" priority="0" />
+      <Item value="document" priority="3" />
+      <Item value="all" priority="0" />
+      <Item value="onclick" priority="4" />
+      <Item value="getAttribute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mshtml.IHTMLStyle">
+      <Item value="toString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToUpper`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mshtml.IHTMLElementCollection">
+      <Item value="AsQueryable`0" priority="2" />
+      <Item value="OfType`1" priority="0" />
+      <Item value="tags`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="First`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Browser">
+      <Item value="TheInstance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mshtml.IHTMLDocument2">
+      <Item value="parentWindow" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mshtml.IHTMLWindow2">
+      <Item value="execScript`0" priority="2" />
+      <Item value="window" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DBNull">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mshtml.IHTMLDocument">
+      <Item value="Script" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

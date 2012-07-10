@@ -1,0 +1,26 @@
+﻿@model BinbinJobSearch.Entities.Posting
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Posting</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">Merchant</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Merchant.Name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.PostingID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

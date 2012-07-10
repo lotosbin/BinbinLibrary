@@ -1,0 +1,82 @@
+﻿Using the Google Reader API – Part 3
+Google Reader API series
+
+Part 1 – Programming to the API
+Part 2 – Listing API
+Part 3 – Editing API
+In part 3 of this series on using the Google Reader API I will discuss using the POST API to edit your Google Reader data. Although the REST architecture and HTTP in general doesn’t enforce it, Google appears to have chosen to make any commands which alter the state of your Reader account POST (as opposed to GET) requests.
+
+In Part I I went over how to program for the HTTP POST requests so for now I’ll just go over the API. Arguments to POST calls are stored in a separate message body, unlike GET arguments which are stored in the URL exclusively. This is the main differentiating factor between the two types of calls. All POST calls to the Google Reader API take a single GET argument in the URL string – the client argument, which is the same as the client argument seen in all of the API calls in Part II of this series – just use a unique string identifying your own software package if in doubt.
+
+For the purposes of this tutorial I’ll split the calls into a number of categories.
+
+Subscription editing – adding, editing and removal of subscriptions and their folders/tags
+Item editing – editing of items, such as adding/removing tags and stars, “liking” items, sharing (broadcasting) items, keeping items unread, etc.
+Email – Emailing items using your Google Gmail account
+
+Subscription Editing
+URL: http://www.google.com/reader/api/0/subscription/edit?client=[your client]
+
+POST Data
+
+Argument	Description
+s	The feed identifier. This is the URL of the feed preceeded by feed/, for example feed/http://blog.martindoms.com/feed/ for this blog’s RSS feed.
+ac	The action to take on this feed. Possible values are subscribe to subscribe, unsubscribe to unsubscribe and edit to edit the feed.
+t	The title to give the feed, only relevant in subscribe and edit actions.
+r	A label to remove from the feed. This is in the format user/[UserID]/label/[LabelName]. As usual UserID can be replaced with a single dash. For example, to remove the label “MyLabel” you’d use the string user/-/label/MyLabel
+a	A label to add to the feed. See the notes for the r argument above.
+T	Your token (see Part I if you’re unsure of what this is). This is an argument in every POST call.
+Examples
+Adding a feed – let’s add this blog’s main RSS feed to our subscriptions, but give it the title “Mr Doms’ Blog”. We’ll POST the following data to the relevant URL (at the top of this section). You’ll need to URL encode this data before posting but I’ve left it unencoded for ease of reading. Let’s assume I’ve already got myself a token which looks like abcde.ABCD1234abc
+s=feedhttp://blog.martindoms.com/feed/&ac=subscribe&t=Mr Doms’ Blog&T=abcde.ABCD1234abc
+Editing a feed – we want to add this feed to our “Infrequently Updated Blogs” folder on Google Reader to keep things organized. POST this data:
+a=user/-/label/Infrequently Updated Blogs&s=feed/http://blog.martindoms.com/feed/&ac=edit&
+T=abcde.ABCD1234abc
+Removing a feed – finally, let’s remove this blog from our subscriptions out of frustration at Martin’s lack of regular updates.
+s=feed/http://blog.martindoms.com/feed/&ac=unsubscribeT=abcde.ABCD1234abc
+
+
+Item Editing
+URL: http://www.google.com/reader/api/0/edit-tag?client=[your client]
+
+POST Data
+
+Argument	Description
+a	A new tag to add. This can take one of several formats depending on the type of tag you’re adding to the item. See the notes at the bottom of this table for details.
+r	Remove an existing tag. This tag can take one of several formats depending on the type of tag you’re removing from the item. See the notes at the bottom of this table for details.
+async	Can be either true or false. This appears to be a utility argument for Google’s own website, as it doesn’t seem to make a difference to my API calls.
+s	The feed that this item belongs to. See the previous section for information on the format of this argument.
+i	The item you want to tag. This is in the format tag:google.com,2005:reader/item/[item identifier].
+T	As usual this is your token. See Part I if you’re unsure about what this is.
+Tag identifier formatting – to add or remove a tag on an item you need to use a tag identifier string in the a or r argument. Google doesn’t seem to have a fully consistent way of formatting these tag identifiers, but here’s what I’ve figured out.
+
+Add/remove a custom tag (item label): user/-/label/[NewTag]
+Mark an item read or unread: user/-/com.google/read
+Star an item: user/-/state/com.google/starred
+Add or remove a “keep unread” tag: user/-/state/com.google/tracking-kept-unread
+“Like” or un-”like” an item: user/-/state/com.google/like
+Share or unshare an item with Google Reader friends: user/-/state/com.google/broadcast
+Examples
+To use any tag features you’ll need to retrieve an item identifier. Presumably if you’re displaying items in your software then you’ve already got an item identifier. If you don’t know how to retrieve these items, see Part II for the listing API. For the purpose of these examples I’ll be working with an item that represents Part I of this series, which happens to be item 0816b6dbac1d768d. We’ll also be assuming a token string abcde.ABCD1234abc as before.
+Add a star – to add a star we send the POST data a=user/-/state/com.google/starred&async=true&s=feed/http://blog.martindoms.com/feed/&i=tag:google.com,2005:reader/item/0816b6dbac1d768d&T=abcde.ABCD1234abc
+Mark as unread – we want to remove the “read” tag to mark an item as unread. Use this POST data: a=user/-/state/com.google/read&async=true&s=feed/http://blog.martindoms.com/feed/&i=tag:google.com,2005:reader/item/0816b6dbac1d768d&T=abcde.ABCD1234abc
+
+The item tagging doesn’t get any more complicated than that. Easy!
+
+
+Emailing
+URL: http://www.google.com/reader/email-this?ck=[CurrentUnixTime]&client=[YourClient]
+(current Unix time argument is optional)
+
+POST Data
+
+Argument	Description
+i	The item identifier. See the previous section for details.
+emailTo	The email addresses to send the item to. You can send to multiple recipients. These addresses are in the format , ,
+comment	The email body
+subject	The email subject
+ccMe	Whether to send the email to your own GMail account also. Can be true or false.
+T	Your token. See Part I if you’re unsure of what this is.
+Example
+Here’s some example POST data to send an email about Part I of this series of articles to the address example@example.com
+i=i=tag:google.com,2005:reader/item/0816b6dbac1d768&emailTo= <example@example.com>, &comment=Check this out&subject=Google Reader API&ccMe=false&T=abcde.ABCD1234abc

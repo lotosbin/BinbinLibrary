@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinAccount.Entities", "BinbinAccount.Entities\BinbinAccount.Entities.csproj", "{E6CF95B8-A273-4AF7-B57E-ECCB625C6AB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinAccount.WebSite", "BinbinAccount.WebSite\BinbinAccount.WebSite.csproj", "{2C72FD83-6600-48EC-9220-2E646344A8D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinAccount.WebSite.Tests", "BinbinAccount.WebSite.Tests\BinbinAccount.WebSite.Tests.csproj", "{AC9E3680-23EA-459F-95FE-CB4A38BC0877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinSoft.WebSite", "BinbinSoft.WebSite\BinbinSoft.WebSite.csproj", "{7895972F-A12D-4A25-880B-DF57A5282800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinSoft.WebSite.Tests", "BinbinSoft.WebSite.Tests\BinbinSoft.WebSite.Tests.csproj", "{C4477C9C-DFAD-4952-B20F-B8232A0C2BFB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BinbinAccount.Entities\\BinbinAccount.Entities.csproj
+		SccProjectName1 = BinbinAccount.Entities
+		SccLocalPath1 = BinbinAccount.Entities
+		SccProjectUniqueName2 = BinbinAccount.WebSite\\BinbinAccount.WebSite.csproj
+		SccProjectName2 = BinbinAccount.WebSite
+		SccLocalPath2 = BinbinAccount.WebSite
+		SccProjectUniqueName3 = BinbinAccount.WebSite.Tests\\BinbinAccount.WebSite.Tests.csproj
+		SccProjectName3 = BinbinAccount.WebSite.Tests
+		SccLocalPath3 = BinbinAccount.WebSite.Tests
+		SccProjectUniqueName4 = BinbinSoft.WebSite\\BinbinSoft.WebSite.csproj
+		SccProjectName4 = BinbinSoft.WebSite
+		SccLocalPath4 = BinbinSoft.WebSite
+		SccProjectUniqueName5 = BinbinSoft.WebSite.Tests\\BinbinSoft.WebSite.Tests.csproj
+		SccProjectName5 = BinbinSoft.WebSite.Tests
+		SccLocalPath5 = BinbinSoft.WebSite.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6CF95B8-A273-4AF7-B57E-ECCB625C6AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6CF95B8-A273-4AF7-B57E-ECCB625C6AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6CF95B8-A273-4AF7-B57E-ECCB625C6AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6CF95B8-A273-4AF7-B57E-ECCB625C6AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C72FD83-6600-48EC-9220-2E646344A8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C72FD83-6600-48EC-9220-2E646344A8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C72FD83-6600-48EC-9220-2E646344A8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C72FD83-6600-48EC-9220-2E646344A8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC9E3680-23EA-459F-95FE-CB4A38BC0877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9E3680-23EA-459F-95FE-CB4A38BC0877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9E3680-23EA-459F-95FE-CB4A38BC0877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9E3680-23EA-459F-95FE-CB4A38BC0877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7895972F-A12D-4A25-880B-DF57A5282800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7895972F-A12D-4A25-880B-DF57A5282800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7895972F-A12D-4A25-880B-DF57A5282800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7895972F-A12D-4A25-880B-DF57A5282800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4477C9C-DFAD-4952-B20F-B8232A0C2BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4477C9C-DFAD-4952-B20F-B8232A0C2BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4477C9C-DFAD-4952-B20F-B8232A0C2BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4477C9C-DFAD-4952-B20F-B8232A0C2BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

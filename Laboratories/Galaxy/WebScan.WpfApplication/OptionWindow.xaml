@@ -1,0 +1,12 @@
+﻿<Window x:Class="WebScan.WpfApplication.OptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OptionWindow" Height="300" Width="300" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="191,226,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="94,26,0,0" Name="textBox1" VerticalAlignment="Top" Width="120" Text=".\SQLEXPRESS" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="94,55,0,0" Name="textBox2" VerticalAlignment="Top" Width="120" Text="sa" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="94,84,0,0" Name="textBox3" VerticalAlignment="Top" Width="120" Text="sa" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="94,113,0,0" Name="textBox4" VerticalAlignment="Top" Width="120" Text="GalaxyWebScanDB" />
+    </Grid>
+</Window>

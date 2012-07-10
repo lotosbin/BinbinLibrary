@@ -1,0 +1,40 @@
+﻿<Activity mc:Ignorable="sap" x:Class="VisitWebSite.Workflow4" sap:VirtualizedContainerService.HintSize="526,1776" mva:VisualBasic.Settings="Assembly references and imported namespaces for internal implementation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:s4="clr-namespace:System;assembly=System.ServiceModel" xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:v="clr-namespace:VisitWebSiteActivityLibrary;assembly=VisitWebSiteActivityLibrary" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence sad:XamlDebuggerXmlReader.FileName="C:\Users\Administrator\Desktop\VisitWebSite\Workflow4.xaml" sap:VirtualizedContainerService.HintSize="486,1736">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="variable1" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg3:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <v:VisitPage sap:VirtualizedContainerService.HintSize="464,96" Url="[&quot;http://passport.cnblogs.com/login.aspx&quot;]" WaitTime="[500]" />
+    <v:InputData sap:VirtualizedContainerService.HintSize="464,126" InputName="[&quot;tbUserName&quot;]" Type="[&quot;TEXT&quot;]" Value="[&quot;你博客园的账号&quot;]" />
+    <v:InputData sap:VirtualizedContainerService.HintSize="464,126" InputName="[&quot;tbPassword&quot;]" Type="[&quot;TEXT&quot;]" Value="[&quot;你博客园的密码&quot;]" />
+    <v:InputData sap:VirtualizedContainerService.HintSize="464,126" InputName="[&quot;chkRemember&quot;]" Type="[&quot;CHECKBOX&quot;]" Value="[&quot;True&quot;]" />
+    <v:Click ClickName="[&quot;btnLogin&quot;]" sap:VirtualizedContainerService.HintSize="464,68" />
+    <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="464,22" />
+    <v:VisitPage sap:VirtualizedContainerService.HintSize="464,96" Url="[&quot;http://www.cnblogs.com/zhuqil/archive/2010/02/27/life.html&quot;]" WaitTime="[1000]" />
+    <While sap:VirtualizedContainerService.HintSize="464,672" Condition="True">
+      <Sequence sap:VirtualizedContainerService.HintSize="438,551">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg3:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="342,59">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[variable1]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">[variable1 + 1]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <v:InputDataExtension Type="{x:Null}" sap:VirtualizedContainerService.HintSize="342,96" InputID="[&quot;tbCommentBody&quot;]" Value="[&quot;这是WF4.0自动访问网站机器人回复滴,5分钟回复一次！回复&quot; + variable1.ToString()]" />
+        <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="342,22" />
+        <v:ClickExtension ClickName="[&quot;btn_comment_submit&quot;]" sap:VirtualizedContainerService.HintSize="342,68" />
+        <Delay Duration="00:05:00" sap:VirtualizedContainerService.HintSize="342,22" />
+      </Sequence>
+    </While>
+  </Sequence>
+</Activity>

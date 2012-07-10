@@ -1,0 +1,33 @@
+﻿<Activity mc:Ignorable="sap" x:Class="Baishehui.Workflow1" sap:VirtualizedContainerService.HintSize="526,1211" mva:VisualBasic.Settings="Assembly references and imported namespaces for internal implementation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:s4="clr-namespace:System;assembly=System.ServiceModel" xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:v="clr-namespace:VisitWebSiteActivityLibrary;assembly=VisitWebSiteActivityLibrary" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg3:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sad:XamlDebuggerXmlReader.FileName="C:\Users\binbin\Documents\Visual Studio 2010\Projects\VisitWebSite\Baishehui\Workflow1.xaml" sap:VirtualizedContainerService.HintSize="486,1171">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="isRunning" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg3:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <v:VisitPage BrowserInstance="{x:Null}" sap:VirtualizedContainerService.HintSize="464,96" Url="[&quot;http://bai.sohu.com/&quot;]" WaitTime="[10000]" />
+    <v:InputData sap:VirtualizedContainerService.HintSize="464,126" InputName="[&quot;email&quot;]" Type="[&quot;TEXT&quot;]" Value="[&quot;lotosbin@sogou.com&quot;]" />
+    <v:InputData sap:VirtualizedContainerService.HintSize="464,126" InputName="[&quot;password&quot;]" Type="[&quot;TEXT&quot;]" Value="[&quot;Chaos2010&quot;]" />
+    <v:ClickInputByClass ClickName="[&quot;sign&quot;]" DisplayName="登录" sap:VirtualizedContainerService.HintSize="464,68" />
+    <While sap:VirtualizedContainerService.HintSize="464,471" Condition="[isRunning]">
+      <Sequence sap:VirtualizedContainerService.HintSize="438,355">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg3:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <WriteLine sap:VirtualizedContainerService.HintSize="342,61" Text="打卡" />
+        <v:ClickSpanById ClickName="[&quot;dwages&quot;]" DisplayName="打卡" sap:VirtualizedContainerService.HintSize="342,68" />
+        <Delay Duration="[New TimeSpan(0, 30, 0)]" sap:VirtualizedContainerService.HintSize="342,22" />
+      </Sequence>
+    </While>
+  </Sequence>
+</Activity>

@@ -1,0 +1,290 @@
+Using the Google Reader API 每 Part 2
+Google Reader API series
+
+Part 1 每 Programming to the API
+Part 2 每 Listing API
+Part 3 每 Editing API
+In this post I will discuss the listing API for Google reader. This encapsulates all of the calls you＊ll need to list items and feeds in various ways. The table below summarizes the API URLs you＊ll be using. Simply follow the table from left to right to find your target API handle. Click on a terminal item to see a summary of what it does and how to use it.
+
+Note that for the user items I have found that substituting a dash for the user number works in every case I＊ve tested, because a user needs to be logged in with a valid token to use these calls anyway.
+
+If this is your first foray into using the Google Reader API then you＊ll want to read my previous post which describes how to acquire a valid token and cookie, and make calls to the API. Unlike part 1 of this series, this part is totally language agnostic.
+
+URL structure: http://www.google.com/＃
+/reader/api/0/
+unread-count
+user-info
+stream/contents/
+feed/[feedurl]
+user/[userNumber]/
+label/[labelName]
+state/com.google/
+reading-list
+starred
+broadcast
+created
+
+unread-count
+Gets a list of feeds for the current user and the number of unread items in each feed. Also returns a list of labels that the user has created.
+Parameters
+
+allcomments=[true|false] : I＊m not sure what this parameter does, please leave a comment if you figure this one out.
+output=[json|xml] : Determines the format of the response. Default: xml
+ck=[unix timestamp] : Use the current Unix time here, helps Google with caching
+client=[your client] : You can use the default Google client (scroll), but it doesn＊t seem to make a difference. Google probably uses this field to gather data on who is accessing the API, so I＊d advise using your own unique string to identify your software.
+Sample Output (XML)
+
+GET http://www.google.com/reader/api/0/unread-count?allcomments=true&output=xml&ck=1255643091105&client=scroll
+<object>
+    <number name="max">1000</number>
+    <list name="unreadcounts">
+        <object>
+            <string name="id">feed/http://www.pwop.com/feed.aspx?show=dotnetrocks</string>
+            <number name="count">3</number>
+            <number name="newestItemTimestampUsec">1255568508813466</number>
+        </object>
+        <object>
+            <string name="id">feed/http://rssnewsapps.ziffdavis.com/audioblogs/crankygeeks/cg.audio.xml</string>
+            <number name="count">1</number>
+            <number name="newestItemTimestampUsec">1255578279704094</number>
+        </object>
+        <object>
+            <string name="id">user/01723985652832499840/label/myLabel</string>
+            <number name="count">4</number>
+            <number name="newestItemTimestampUsec"> 1256030778673945 </number>
+        </object>
+    </list>
+</object>
+Sample Output (JSON)
+
+GET http://www.google.com/reader/api/0/unread-count?allcomments=false&output=json&ck=1255643091105&client=myApplication
+{
+"max":1000,
+"unreadcounts":
+    [
+    {"id":"feed/http://www.pwop.com/feed.aspx?showu003ddotnetrocks","count":3,"newestItemTimestampUsec":"1255568508813466"},
+    {"id":"feed/http://rssnewsapps.ziffdavis.com/audioblogs/crankygeeks/cg.audio.xml","count":1,"newestItemTimestampUsec":"1255578279704094"},
+    {"id":"user/01723985652832499840/label/myLabel","count":4,"newestItemTimestampUsec":"1256030778673945"}
+    ]
+}
+
+user-info
+Gets information on the current user
+Parameters
+
+ck=[unix timestamp] : Use the current Unix time here, helps Google with caching
+client=[your client] : You can use the default Google client (scroll), but it doesn＊t seem to make a difference. Google probably uses this field to gather data on who is accessing the API, so I＊d advise using your own unique string to identify your software.
+
+Sample Output
+
+GET http://www.google.com/reader/api/0/user-info?&ck=1255643091105&client=myApplication
+{
+    "userId":"01723985652832499840",
+    "userName":"username",
+    "userProfileId":"123456789123456789123",
+    "userEmail":"username@gmail.com",
+    "isBloggerUser":true,
+    "signupTimeSec":1234515320
+}
+
+feed/[feedurl]
+Gets items belonging to a particular feed.
+Parameters
+
+ot=[unix timestamp] : The time from which you want to retrieve items. Only items that have been crawled by Google Reader after this time will be returned.
+r=[d|n|o] : Sort order of item results. d or n gives items in descending date order, o in ascending order.
+xt=[exclude target] : Used to exclude certain items from the feed. For example, using xt=user/-/state/com.google/read will exclude items that the current user has marked as read, or xt=feed/[feedurl] will exclude items from a particular feed (obviously not useful in this request, but xt appears in other listing requests).
+n=[integer] : The maximum number of results to return.
+ck=[unix timestamp] : Use the current Unix time here, helps Google with caching.
+client=[your client] : You can use the default Google client (scroll), but it doesn't seem to make a difference. Google probably uses this field to gather data on who is accessing the API, so I'd advise using your own unique string to identify your software.
+
+Sample Output
+
+GET http://www.google.com/reader/api/0/stream/contents/feed/http://astronomycast.com/podcast.xml?ot=1253052000&r=n&xt=user/-/state/com.google/read&n=20&ck=1255646178892&client=myApplication
+{
+    "id":"feed/http://astronomycast.com/podcast.xml",
+    "title":"Astronomy Cast",
+    "continuation":"CLbwxoSAsZsC",
+    "self":[{"href":"http://www.google.com/reader/api/0/stream/contents/feed/http://astronomycast.com/podcast.xml?"}],
+    "alternate":[{"href":"http://www.astronomycast.com","type":"text/html"}],
+    "updated":1255415774,
+    "items":[
+    {
+        "crawlTimeMsec":"1255415774867",
+        "id":"tag:google.com,2005:reader/item/bfbd19b1936fcccf",
+        "categories":
+        [
+            "user/01723985652832499840/state/com.google/reading-list",
+            "user/01723985652832499840/state/com.google/fresh"
+        ],
+        "title":"Ep. 156: Famous Stars","published":1253491200,
+        "updated":1253491200,
+        "enclosure":
+        [
+            {
+                "href":"http://feedproxy.google.com/~r/astronomycast/~5/4TPW83-0h4Y/AstroCast-090921.mp3",
+                "type":"audio/mpeg","length":"17610000"
+            }
+        ],
+        "alternate":
+        [
+            {
+                "href":"http://feedproxy.google.com/~r/astronomycast/~3/89_Ck5HN--w/",
+                "type":"text/html"
+            }
+        ],
+        "mediaGroup":{"content":[{"url":"http://feedproxy.google.com/~r/astronomycast/~5/4TPW83-0h4Y/AstroCast-090921.mp3"}]},
+        "summary":
+        {
+            "direction":"ltr",
+            "content":"This week we're going to talk about famous stars. But not those boring ..."
+        },
+        "author":"info@astronomycast.com (Fraser Cain \u0026 Dr. Pamela Gay)",
+        "likingUsers":[],
+        "comments":[],
+        "annotations":[],
+        "origin":
+        {
+            "streamId":"feed/http://astronomycast.com/podcast.xml",
+            "title":"Astronomy Cast",
+            "htmlUrl":"http://www.astronomycast.com"
+        }
+    },
+    {
+        "crawlTimeMsec":"1255415774867",
+        "id":"tag:google.com,2005:reader/item/008d8a870f2a9dee",
+        ...
+    }]
+}
+Output summary
+This request returns an object that contains:
+
+Feed id string
+Feed title string
+Continuation string - what is this? Leave a comment if you know
+Self - an array of objects which contain a link to this list
+Alternate - an array of objects which contain non-Google links to the feed (usually the author's RSS)
+Updated timestamp
+Items - an array of item objects which contain
+Crawl time - when the item was crawled by Google Reader
+Id - a unique identifier for the item
+Categories - an array of categories to which this item belongs. These appear to be user-specific
+Item title string
+Updated timestamp
+Enclosure - an array of enclosure objects. These are used mostly for podcasts/videocasts, they contain media items enclosed in the feed item. Enclosure items are composed of
+A link to the media file
+An internet media type
+Length, in bytes
+An array of alternate links to the item
+Media Group - appears to be an object storing an array of direct links to the enclosure media
+Summary - an object containing a description of the feed item and a direction (ltr or rtl) for reading. Is this direction a byte ordering hack? Someone let me know in the comments.
+Author string
+An array of users who "like" the item
+An array of comments on the item
+An array of annotations on the item
+An origin object which stores
+The stream id - this is the feed/[feedurl] that Google uses to identify the feed
+The feed title string
+The HTML url to the feed's homepage
+
+label/[labelName]
+Lists all items from a given label.
+Parameters
+
+See feed list
+GET http://www.google.com/reader/api/0/stream/contents/user/-/label/label?ot=1253066400&r=n&xt=user/-/com.google/read&n=20&ck=1255660064860&client=myApplication
+Sample Output - See feed list
+
+
+reading-list
+List all items in the user's reading list. This is a list of all of the items from all of the user's feeds, excluding items depending on the xt (exclude target) parameter.
+Parameters
+
+See feed list
+GET http://www.google.com/reader/api/0/stream/contents/user/-/state/com.google/reading-list?ot=1253066400&r=n&xt=user/-/state/com.google/read&n=20&ck=1255660536125&client=myApplication
+Sample Output - See feed list
+
+
+starred
+List all items that the user has marked as "starred"
+Parameters
+
+n=[integer] : The maximum number of results to return.
+ck=[unix timestamp] : Use the current Unix time here, helps Google with caching.
+client=[your client] : You can use the default Google client (scroll), but it doesn't seem to make a difference. Google probably uses this field to gather data on who is accessing the API, so I'd advise using your own unique string to identify your software.
+GET http://www.google.com/reader/api/0/stream/contents/user/-/state/com.google/starred?n=20&ck=1255660749447&client=myApplication
+Sample Output - See feed list
+
+
+broadcast
+List all items that the user has chosen to share publicly.
+Parameters
+
+n=[integer] : The maximum number of results to return.
+ck=[unix timestamp] : Use the current Unix time here, helps Google with caching.
+client=[your client] : You can use the default Google client (scroll), but it doesn't seem to make a difference. Google probably uses this field to gather data on who is accessing the API, so I'd advise using your own unique string to identify your software.
+GET http://www.google.com/reader/api/0/stream/contents/user/-/state/com.google/broadcast?n=20&ck=1255660975267&client=myApplication
+Sample Output - See feed list
+
+
+created
+List all notes that the user has created.
+Parameters
+
+n=[integer] : The maximum number of results to return.
+ck=[unix timestamp] : Use the current Unix time here, helps Google with caching.
+client=[your client] : You can use the default Google client (scroll), but it doesn't seem to make a difference. Google probably uses this field to gather data on who is accessing the API, so I'd advise using your own unique string to identify your software.
+Sample Output
+
+GET http://www.google.com/reader/api/0/stream/contents/user/-/state/com.google/created?n=20&ck=1255661349906&client=myApplication
+{
+    "id":"user/01723985652832499840/source/com.google/post",
+    "title":"\"post\" via iamaelephant in Google Reader",
+    "self":
+    [
+        {"href":"http://www.google.com/reader/api/0/stream/contents/user/01723985652832499840/state/com.google/created?n\u003d20\u0026ck\u003d1255661572704\u0026client\u003dscroll"}
+    ],
+    "author":"iamaelephant",
+    "updated":1255661564,
+    "items":
+    [
+        {
+            "crawlTimeMsec":"1255661564095",
+            "id":"tag:google.com,2005:reader/item/2dc5e875a623fe5e",
+            "categories":
+            [
+                "user/01723985652832499840/source/com.google/post",
+                "user/01723985652832499840/state/com.google/broadcast",
+                "user/01723985652832499840/state/com.google/read",
+                "user/01723985652832499840/state/com.google/fresh"
+            ],
+            "published":1255661564,
+            "updated":1255661564,
+            "related":
+            [
+                {"href":"http://www.google.com/reader/shared/01723985652832499840","streamId":"user/01723985652832499840/state/com.google/broadcast"}
+            ],
+            "alternate":
+            [
+                {"href":"http://www.google.com/reader/item/tag:google.com,2005:reader/item/2dc5e875a623fe5e","type":"text/html"}
+            ],
+            "content":
+            {
+                "direction":"ltr",
+                "content":"this is the note text"
+            },
+            "author":"iamaelephant",
+            "likingUsers":[],
+            "comments":[],
+            "annotations":[],
+            "origin":
+            {
+                "streamId":"user/01723985652832499840/source/com.google/post",
+                "htmlUrl":"http://www.google.com/reader/shared/01723985652832499840"
+            }
+        }
+    ]
+}
+That's an awful lot of information for a little note, but most of it corresponds closely to item information, so if you're unsure of how to interpret a field, have a look at the output summary for the feed/[feedurl] call.
+
+Phew! That mostly does it for the listing methods. There are some other minor calls I've left out for brevity, but most of what you'll want to achieve is in here, and I intend on releasing complete documentation when I have finished my .NET Google Reader API library. In my next post I'll discuss the POST methods so you can start altering the contents of your Google Reader list, star/un-star items, etc. Stay tuned!

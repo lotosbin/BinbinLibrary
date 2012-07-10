@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BinbinCdnMvc" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UseMinCss" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="UseMinScript" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ContentMinVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2011082401</Value>
+    </Setting>
+    <Setting Name="ContentServerUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://static.ymatou.com/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,196 @@
+Using the Google Reader API 每 Part 1
+Google Reader API series
+
+Part 1 每 Programming to the API
+Part 2 每 Listing API
+Part 3 每 Editing API
+Google have never officially released API documentation for Google Reader, so this information is unofficial and subject to change.
+
+When I first started looking around for API docs to interface with Google Reader, this site seemed to be pretty much the only resource available. Unfortunately a lot of the information in that document is outdated, so I set about trying to figure out the API myself, with some success.
+
+To interface with Google reader, you＊ll need to collect the following things from their authentication system:
+
+SID 每 A session ID, which remains valid until you log out
+Token 每 Similar to a session ID, but expires quickly. Used to access direct API calls
+Cookie 每 An ordinary cookie that uses your SID to authenticate your session on API calls
+The code samples I＊m using will be in C#, but should be easily translatable to any language.
+
+To get an SID, we send a GET request to https://www.google.com/accounts/ClientLogin with arguments service=reader&Email=[your Google username]&Passwd=[your Google password]
+This will return some text with key=value pairs for LSID, SID and User. SID is the only part of this we need, so use your string library to grab this information.
+
+Now that we have an SID we need a token. We send a GET request to http://www.google.com/reader/api/0/token with a cookie we generate from the SID. The cookie information is
+
+Name: SID
+Value: [your SID]
+Path: /
+Domain: .google.com
+This request returns just the token text.
+
+So here is the code I wrote for getting SID and token:
+
+using System.Net;
+using System.IO;
+
+namespace GoogleReader.NET
+{
+    public class GoogleReader
+    {
+        private string _sid = null;
+        private string _token = null;
+        private Cookie _cookie = null;
+
+        private string _username;
+        private string _password;
+
+        public GoogleReader(string username, string password)
+        {
+            _username = username;
+            _password = password;
+
+            connect();
+        }
+
+        private bool connect()
+        {
+            getToken();
+            return _token != null;
+        }
+        private void getToken()
+        {
+            getSid();
+            _cookie = new Cookie("SID", _sid, "/", ".google.com");
+
+            string url = "http://www.google.com/reader/api/0/token";
+
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+            req.Method = "GET";
+            req.CookieContainer = new CookieContainer();
+            req.CookieContainer.Add(_cookie);
+
+            HttpWebResponse response = (HttpWebResponse)req.GetResponse();
+            using (var stream = response.GetResponseStream())
+            {
+                StreamReader r = new StreamReader(stream);
+                _token = r.ReadToEnd();
+            }
+        }
+        private void getSid()
+        {
+            string requestUrl = string.Format
+                ("https://www.google.com/accounts/ClientLogin?service=reader&Email={0}&Passwd={1}",
+                _username, _password);
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(requestUrl);
+            req.Method = "GET";
+
+            HttpWebResponse response = (HttpWebResponse)req.GetResponse();
+            using (var stream = response.GetResponseStream())
+            {
+                StreamReader r = new StreamReader(stream);
+                string resp = r.ReadToEnd();
+
+                int indexSid = resp.IndexOf("SID=") + 4;
+                int indexLsid = resp.IndexOf("LSID=");
+                _sid = resp.Substring(indexSid, indexLsid - 5);
+            }
+        }
+    }
+}
+From here were can make interface calls (I plan to document the complete set of API calls in the very near future, but for now I＊ll give a couple of examples). To add a subscription, make an HTTP POST to http://www.google.com/reader/api/0/subscription/quickadd?client=scroll with POST arguments quickadd=[url of feed]&T=[your token] and don＊t forget to include your cookie. I wrote a couple of quick helper methods for making POST and GET calls first:
+
+private HttpWebResponse httpGet(string requestUrl, string getArgs)
+        {
+            string url = string.Format("{0}?{1}", requestUrl, getArgs);
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            request.CookieContainer = new CookieContainer();
+            request.CookieContainer.Add(_cookie);
+
+            try
+            {
+                return (HttpWebResponse)request.GetResponse();
+            }
+            catch
+            {
+                // handle error
+                return null;
+            }
+        }
+
+        private HttpWebResponse httpPost(string requestUrl, string postArgs)
+        {
+            byte[] buffer = Encoding.GetEncoding(1252).GetBytes(postArgs);
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
+            request.Method = "POST";
+            request.CookieContainer = new CookieContainer();
+            request.CookieContainer.Add(_cookie);
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = buffer.Length;
+
+            Stream PostData = request.GetRequestStream();
+
+            PostData.Write(buffer, 0, buffer.Length);
+            PostData.Close();
+
+            try
+            {
+                return (HttpWebResponse)request.GetResponse();
+            }
+            catch
+            {
+                //handle error
+                return null;
+            }
+}
+Now for the add subscription code:
+
+        public bool AddFeed(string feedUrl)
+        {
+            string data = String.Format("quickadd={0}&T={1}", feedUrl, _token);
+            string url = "http://www.google.com/reader/api/0/subscription/quickadd?client=scroll";
+            
+            HttpWebResponse response = httpPost(url, data);
+            if (response == null) return false;
+            return true;
+        }
+We can add a label to a feed by POSTING to http://www.google.com/reader/api/0/subscription/edit?client=scroll with arguments a=user/-/label/[new label]&s=feed/[feed url]&ac=edit&T=[token] like so:
+
+        public bool AddLabelToFeed(string label, string feedUrl)
+        {
+            string data = String.Format
+                ("a=user/-/label/{0}&s=feed/{1}&ac=edit&T={2}", label, feedUrl, _token);
+            string url = "http://www.google.com/reader/api/0/subscription/edit?client=scroll";
+
+            HttpWebResponse response = httpPost(url, data);
+
+            if (response == null) return false;
+            return true;
+        }
+There are of course listing methods for getting feeds. So far I＊ve only been able to figure out how to get feed information in JSON format, but if anyone knows how to grab XML data please leave a comment. To list items we send a GET request to http://www.google.com/reader/api/0/stream/contents/user/-/state/com.google/reading-list?ck=[current UNIX time] . Of course there are many more otpional arguments for all of these methods, which I will be documenting. Here＊s the list code:
+
+public void ListAll()
+        {
+            string url = string.Format
+                ("http://www.google.com/reader/api/0/stream/contents/user/-/" +
+                 "state/com.google/reading-list");
+            string args = string.Format
+                ("ck={0}", getUnixTimeNow());
+            HttpWebResponse response = httpGet(url, args);
+
+            Stream str = response.GetResponseStream();
+            StreamReader sr = new StreamReader(str);
+            string s = sr.ReadToEnd();
+            // Handle JSON data in s
+            
+            sr.Close();
+        }
+getUnixTimeNow() is a small helper method I wrote for getting the current Unix time:
+
+private long getUnixTimeNow()
+        {
+            TimeSpan ts = (DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0));
+            long unixTime = (long)ts.TotalSeconds;
+            return unixTime;
+        }
+This has been a small taste of what＊s to come as I work my way through this API. Stay tuned for more. If you want to get hacking on it yourself, the easiest way is to download Fiddler, a great web debugging tool, and watch the HTTP requests as you use Google Reader.

@@ -1,0 +1,5 @@
+﻿@model object
+@{
+    var ModelValue = this.GetModelValueForDecimal();
+}
+@Html.TextBox("", ModelValue, new { @class = "text-box single-line" })

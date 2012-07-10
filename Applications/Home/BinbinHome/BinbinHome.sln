@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{00000000-0000-0000-0000-000000000000}") = "WebSite", "WebSite\WebSite.csproj", "{DD00627A-808D-4FC0-B915-6834F5B0DCA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveConnect", "LiveConnect\LiveConnect.csproj", "{0D6F14E1-36F5-4462-AAFA-0D525F7187FC}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = WebSite
+		SccLocalPath2 = LiveConnect
+		SccNumberOfProjects = 3
+		SccProjectName1 = WebSite
+		SccProjectName2 = LiveConnect
+		SccProjectUniqueName1 = WebSite\\WebSite.csproj
+		SccProjectUniqueName2 = LiveConnect\\LiveConnect.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D6F14E1-36F5-4462-AAFA-0D525F7187FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6F14E1-36F5-4462-AAFA-0D525F7187FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6F14E1-36F5-4462-AAFA-0D525F7187FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6F14E1-36F5-4462-AAFA-0D525F7187FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD00627A-808D-4FC0-B915-6834F5B0DCA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD00627A-808D-4FC0-B915-6834F5B0DCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD00627A-808D-4FC0-B915-6834F5B0DCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD00627A-808D-4FC0-B915-6834F5B0DCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

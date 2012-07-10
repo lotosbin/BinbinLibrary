@@ -1,0 +1,14 @@
+﻿@model string
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    Index</h2>
+<img src="@(this.Model)" />
+@using (this.Html.BeginForm("Index", "Home", new { }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    this.Html.ValidationSummary();
+    <input type="file" name="name" value=" " />    
+    <input type="submit" name="name" value="ok" />
+}

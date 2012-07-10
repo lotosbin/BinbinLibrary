@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Binbin.DynamicImage.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UploadPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\\Web\\Upload</Value>
+    </Setting>
+    <Setting Name="GeneratePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\\Web\\Generate</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

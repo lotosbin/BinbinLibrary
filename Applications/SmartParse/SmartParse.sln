@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{00000000-0000-0000-0000-000000000000}") = "BinbinSmartParse", "BinbinSmartParse\BinbinSmartParse.csproj", "{972D4882-6BEA-433B-A935-BECE607A3AB0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = BinbinSmartParse
+		SccNumberOfProjects = 2
+		SccProjectName1 = BinbinSmartParse
+		SccProjectUniqueName1 = BinbinSmartParse\\BinbinSmartParse.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{972D4882-6BEA-433B-A935-BECE607A3AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972D4882-6BEA-433B-A935-BECE607A3AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972D4882-6BEA-433B-A935-BECE607A3AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972D4882-6BEA-433B-A935-BECE607A3AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

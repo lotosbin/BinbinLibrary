@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinNugetClassLibraryProjectTemplateForNet40", "BinbinNugetClassLibraryProjectTemplate\BinbinNugetClassLibraryProjectTemplateForNet40.csproj", "{21B07F49-968C-44C3-9087-5214F6D10270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinMvc4UnityWebApplication", "BinbinMvc4UnityWebApplication\BinbinMvc4UnityWebApplication.csproj", "{ECA9A1AD-D2DB-46BA-BF56-7DE8D1B94886}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinbinNugetClassLibraryProjectTemplateForNet45", "BinbinNugetClassLibraryProjectTemplateForNet45\BinbinNugetClassLibraryProjectTemplateForNet45.csproj", "{3E4BD05A-2896-4D9B-A684-93940638D26B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = BinbinMvc4UnityWebApplication
+		SccLocalPath2 = BinbinNugetClassLibraryProjectTemplateForNet45
+		SccLocalPath3 = BinbinNugetClassLibraryProjectTemplate
+		SccNumberOfProjects = 4
+		SccProjectName1 = BinbinMvc4UnityWebApplication
+		SccProjectName2 = BinbinNugetClassLibraryProjectTemplateForNet45
+		SccProjectName3 = BinbinNugetClassLibraryProjectTemplate
+		SccProjectUniqueName1 = BinbinMvc4UnityWebApplication\\BinbinMvc4UnityWebApplication.csproj
+		SccProjectUniqueName2 = BinbinNugetClassLibraryProjectTemplateForNet45\\BinbinNugetClassLibraryProjectTemplateForNet45.csproj
+		SccProjectUniqueName3 = BinbinNugetClassLibraryProjectTemplate\\BinbinNugetClassLibraryProjectTemplateForNet40.csproj
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21B07F49-968C-44C3-9087-5214F6D10270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B07F49-968C-44C3-9087-5214F6D10270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B07F49-968C-44C3-9087-5214F6D10270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B07F49-968C-44C3-9087-5214F6D10270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E4BD05A-2896-4D9B-A684-93940638D26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E4BD05A-2896-4D9B-A684-93940638D26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E4BD05A-2896-4D9B-A684-93940638D26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E4BD05A-2896-4D9B-A684-93940638D26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA9A1AD-D2DB-46BA-BF56-7DE8D1B94886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA9A1AD-D2DB-46BA-BF56-7DE8D1B94886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA9A1AD-D2DB-46BA-BF56-7DE8D1B94886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA9A1AD-D2DB-46BA-BF56-7DE8D1B94886}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

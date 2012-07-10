@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GoogleReader">
+  <DataContextMoniker Name="/GoogleReaderDataContext" />
+  <nestedChildShapes>
+    <classShape Id="aa2d9f60-714c-4c6d-af18-c374648f3366" absoluteBounds="2.125, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/GoogleReaderDataContext/Feed" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e77e2b55-ee2c-44b3-a346-396c820b13c7" absoluteBounds="2.14, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

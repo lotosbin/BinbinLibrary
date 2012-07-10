@@ -1,0 +1,31 @@
+﻿@model BinbinJobSearch.Entities.Merchant
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Merchant</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">OwnerUserName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OwnerUserName)
+    </div>
+
+    <div class="display-label">CreatedTime</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreatedTime)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.MerchantID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,9 @@
+﻿@model object
+@if (ViewData.ModelMetadata.IsNullableValueType)
+{
+    @Html.DropDownList("", this.BooleanGetTriStateValues(), new { @class = "list-box tri-state" })
+}
+else
+{
+    @Html.CheckBox("", this.BooleanGetValue() ?? false, new { @class = "check-box" })
+}

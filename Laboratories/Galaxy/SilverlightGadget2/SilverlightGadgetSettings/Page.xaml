@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="SilverlightGadgetSettings.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="250" Height="250" SizeChanged="UserControl_SizeChanged">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <TextBlock Text="Put your settings here."/>
+    </Grid>
+</UserControl>
