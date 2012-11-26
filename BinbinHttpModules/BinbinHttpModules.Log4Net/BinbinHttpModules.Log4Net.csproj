@@ -51,8 +51,10 @@
   <ItemGroup>
     <None Include="BinbinHttpModules.Log4Net.nuspec" />
     <None Include="packages.config" />
+    <Content Include="web.config.transform" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="NewFolder1\" />
     <Folder Include="Tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
