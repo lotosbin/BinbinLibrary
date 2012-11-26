@@ -4,13 +4,13 @@
   </configSections>
   <system.web>
     <httpModules>
-      <add name="Log4Net" type="BinbinHttpModules.Log4Net.Log4NetModule ,BinbinHttpModules.Log4Net" />
+      <add name="Log4Net" type="BinbinHttpModules.Log4Net.Log4NetModule, BinbinHttpModules.Log4Net" />
     </httpModules>
   </system.web>
   <system.webServer>
     <validation validateIntegratedModeConfiguration="false" />
     <modules>
-      <add name="Log4Net" type="BinbinHttpModules.Log4Net.Log4NetModule ,BinbinHttpModules.Log4Net" />
+      <add name="Log4Net" type="BinbinHttpModules.Log4Net.Log4NetModule, BinbinHttpModules.Log4Net" />
     </modules>
   </system.webServer>
   <log4net>
