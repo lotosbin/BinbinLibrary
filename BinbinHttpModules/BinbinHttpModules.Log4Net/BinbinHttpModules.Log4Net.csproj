@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationStartModuleBase.cs" />
     <Compile Include="Log4NetModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

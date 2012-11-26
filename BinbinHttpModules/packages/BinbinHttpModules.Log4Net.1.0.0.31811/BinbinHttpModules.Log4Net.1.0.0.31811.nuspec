@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>BinbinHttpModules.Log4Net</id>
-    <version>1.0.0.28053</version>
+    <version>1.0.0.31811</version>
     <title>BinbinHttpModules.Log4Net</title>
     <authors>lotosbin</authors>
     <owners>lotosbin</owners>
@@ -11,7 +11,7 @@
     <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>BinbinHttpModules.Log4Net</description>
-    <releaseNotes>添加log4net配置</releaseNotes>
+    <releaseNotes>XmlConfigurator.Configure() at application start</releaseNotes>
     <copyright>Copyright 2012</copyright>
     <tags>Tag1 Tag2</tags>
     <dependencies>
